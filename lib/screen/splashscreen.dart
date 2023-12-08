@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy/images/imagess.dart';
 
-import 'package:swiggy/pages/pageone.dart';
+
+import 'package:swiggy/pages/getstarted.dart';
+
+import '../utils/images/imagess.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

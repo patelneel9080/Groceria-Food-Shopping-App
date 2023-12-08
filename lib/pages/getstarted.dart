@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:swiggy/images/imagess.dart';
+import 'package:swiggy/utils/Appcolor/app_color.dart';
 
-import 'pagetwo.dart';
+
+import '../utils/images/imagess.dart';
+import 'mobile_no_login.dart';
 
 class PageOne extends StatefulWidget {
   const PageOne({super.key});
@@ -34,7 +36,7 @@ class _PageOneState extends State<PageOne> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Swiggy",
+                  "Groceria",
                   style: GoogleFonts.mukta(
                       color: Colors.white,
                       fontSize: 45,
@@ -124,8 +126,7 @@ class _PageOneState extends State<PageOne> {
                   style: ButtonStyle(
                     fixedSize: MaterialStateProperty.all(
                         Size(size.width, size.height / 18)),
-                    backgroundColor:
-                        MaterialStateProperty.all(Colors.deepOrangeAccent),
+                    backgroundColor: MaterialStateProperty.all(AppColor.buttoncolor),
                   ),
                 ),
                 SizedBox(
