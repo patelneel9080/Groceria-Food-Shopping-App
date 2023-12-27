@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:sizer/sizer.dart';
 import 'package:swiggy/config/app_constant.dart';
 import 'package:swiggy/pages/welcome_splashscreen.dart';
 import 'package:swiggy/pages/otp_login.dart';
@@ -16,8 +17,8 @@ class PageFour extends StatefulWidget {
 }
 
 class _PageFourState extends State<PageFour> {
-  TextEditingController _userName = TextEditingController();
-  TextEditingController _userEmail = TextEditingController();
+  final TextEditingController _userName = TextEditingController();
+  final TextEditingController _userEmail = TextEditingController();
   String _error = '';
 
   @override
@@ -39,7 +40,7 @@ class _PageFourState extends State<PageFour> {
       body: Container(
         height: size.height,
         width: size.width,
-        margin: EdgeInsets.all(18),
+        margin: const EdgeInsets.all(18),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,15 +64,15 @@ class _PageFourState extends State<PageFour> {
                 alignLabelWithHint: true,
                 border: InputBorder.none,
                 labelText: "Name",
-                labelStyle: TextStyle(color: AppColor.textfieldcolor),
+                labelStyle: const TextStyle(color: AppColor.textfieldcolor),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: AppColor.textfieldcolor),
+                  borderSide: const BorderSide(color: AppColor.textfieldcolor),
                 ),
                 hintText: 'Enter your name',
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: AppColor.textfieldcolor),
+                  borderSide: const BorderSide(color: AppColor.textfieldcolor),
                 ),
                 hintStyle: const TextStyle(fontSize: 16, color: Colors.black54),
                 contentPadding: const EdgeInsets.symmetric(
@@ -95,15 +96,15 @@ class _PageFourState extends State<PageFour> {
                 alignLabelWithHint: true,
                 border: InputBorder.none,
                 labelText: "Email(optional)",
-                labelStyle: TextStyle(color: AppColor.textfieldcolor),
+                labelStyle: const TextStyle(color: AppColor.textfieldcolor),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: AppColor.textfieldcolor),
+                  borderSide: const BorderSide(color: AppColor.textfieldcolor),
                 ),
                 hintText: 'Enter your e-mail',
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide(color: AppColor.textfieldcolor),
+                  borderSide: const BorderSide(color: AppColor.textfieldcolor),
                 ),
                 hintStyle: const TextStyle(fontSize: 16, color: Colors.black54),
                 contentPadding: const EdgeInsets.symmetric(
@@ -137,18 +138,18 @@ class _PageFourState extends State<PageFour> {
                   print(userName);
                 }
               },
+              style: ButtonStyle(
+                fixedSize: MaterialStateProperty.all(
+                    Size(400.w, size.height / 18)),
+                backgroundColor:
+                const MaterialStatePropertyAll(AppColor.buttoncolor),
+              ),
               child: Text(
                 "Confirm details",
                 style: GoogleFonts.mukta(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
-              ),
-              style: ButtonStyle(
-                fixedSize: MaterialStateProperty.all(
-                    Size(size.width / 1.2, size.height / 18)),
-                backgroundColor:
-                MaterialStatePropertyAll(AppColor.buttoncolor),
               ),
             ),
           ],

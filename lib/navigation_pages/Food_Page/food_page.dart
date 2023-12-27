@@ -96,7 +96,8 @@ class _Food_PageState extends State<Food_Page> {
                   Container(
                     height: size.height / 6,
                     width: size.width,
-                    decoration: const BoxDecoration(
+                    decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
                         image: DecorationImage(
                             image: NetworkImage(
                                 Food.freedeliveryimage),fit: BoxFit.cover)),
@@ -296,10 +297,6 @@ class _Food_PageState extends State<Food_Page> {
                   ),
                   SizedBox(
                     height: size.height / 34,
-                  ),
-
-                  SizedBox(
-                    height: size.height / 54,
                   ),
                   Container(
                     height: size.height / 4.6,

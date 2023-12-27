@@ -1,6 +1,6 @@
 class ScreenImages {
   static const splashscreen =
-      "https://i.pinimg.com/736x/b3/8a/a1/b38aa1b21050b0e769a97eb751d12829.jpg";
+      "https://scontent.famd1-3.fna.fbcdn.net/v/t39.30808-6/307959489_468400441974981_5451057710767896996_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=JeWjIPv6SV4AX-Uj1AJ&_nc_ht=scontent.famd1-3.fna&oh=00_AfCepwbgm5_66SJ8lF9wG68vJ7CDeQa5OrUy9TAtExERAw&oe=65894D85";
   static const getstartedpage =
       "https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food.jpg";
   static const welcomeimg =
@@ -29,7 +29,7 @@ class Food{
   static const lambburger = "https://static.vecteezy.com/system/resources/previews/027/145/442/original/delicious-greek-lamb-burger-isolated-on-transparent-background-png.png";
   static const turkeyburger = "https://static.vecteezy.com/system/resources/previews/027/143/874/original/delicious-cranberry-turkey-burger-on-transparent-background-png.png";
   static const oven = "https://m.media-amazon.com/images/I/71EYqYZvzzL.jpg";
-  static const freedeliveryimage = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKs5TvpqnyGBIKwgcpoxvvw6GJTm8cTx0PQ36z5lwxQTCzFpj8O3K_laYoZ5oUPHYEz8Df6viX1DIZcDNg7sa-Y2jxmpbL2rvkMZpXfdyrSygVu0wMBV4sKLk9u1Rmd9pS3K0QJxB00wsXhliyaDhKQb1G7v6yjPZCs-rP9erjXw1X7kcJo-2Jbm1DemvJ/s320/Screenshot%202023-12-06%20081524.png";
+  static const freedeliveryimage = "https://lowincomerelief.com/wp-content/uploads/2023/01/Low-Income-Relief-Site-Images-53-728x410.png.webp";
   static const pizza = "https://freepngimg.com/thumb/pizza/2-pizza-png-image.png";
   static const onionpizza = "https://static.vecteezy.com/system/resources/previews/021/351/148/original/pizza-with-sausage-onion-and-pickles-isolated-on-a-transparent-background-png.png";
   static const onioncapsicumpizza = "https://static.vecteezy.com/system/resources/previews/021/351/148/original/pizza-with-sausage-onion-and-pickles-isolated-on-a-transparent-background-png.png";

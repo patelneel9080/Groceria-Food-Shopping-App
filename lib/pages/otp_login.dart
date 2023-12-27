@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
+import 'package:sizer/sizer.dart';
 import 'package:swiggy/pages/name_email_login.dart';
 
 import '../utils/Appcolor/app_color.dart';
@@ -70,8 +71,16 @@ class _PageThreeState extends State<PageThree> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: size.height/56,),
-            const Text("Didn't receive it? Retry",style: TextStyle(color: Colors.black,fontSize: 14),)
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text("Didn't receive it? ",style: TextStyle(color: Colors.black,fontSize: 14),),
+                TextButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree(),));
+                }, child: Text("Retry",style: TextStyle(color: Colors.blue,fontSize: 14),),)
+              ],
+            )
           ],
         ),
       ),
