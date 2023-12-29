@@ -24,9 +24,9 @@ class _Food_PageState extends State<Food_Page> {
             automaticallyImplyLeading: false,
             leading: const Icon(
               CupertinoIcons.location_fill,
-              color: AppColor.textfieldcolor,
+              color: Colors.white,
             ),
-            backgroundColor: Colors.white,
+
             pinned: false,
             snap: true,
             actions: [
@@ -36,10 +36,10 @@ class _Food_PageState extends State<Food_Page> {
                   child: Container(
                     height: size.height / 22,
                     width: size.width / 10,
-                    color: Colors.black87,
+                    color: Colors.white54,
                     child: const Icon(
                       Icons.person,
-                      color: Colors.white,
+                      color: Colors.black54,
                     ),
                   ),
                 ),
@@ -52,18 +52,18 @@ class _Food_PageState extends State<Food_Page> {
                 Text(
                   "L.P.Savani >",
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
                 ),
                 Text(
                   "TGB, Hariom Nagar Society, Adajan Gam,Atman Park,...",
-                  style: TextStyle(color: Colors.black, fontSize: 14),
+                  style: TextStyle( color: Colors.white, fontSize: 14),
                 ),
               ],
             ),
             floating: true,
-            expandedHeight: size.height / 11,
+            expandedHeight: size.height / 12,
           ),
           SliverToBoxAdapter(
             child: Container(
@@ -73,6 +73,9 @@ class _Food_PageState extends State<Food_Page> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  SizedBox(
+                    height: size.height / 54,
+                  ),
                   TextField(
                     maxLines: 1,
                     decoration: InputDecoration(

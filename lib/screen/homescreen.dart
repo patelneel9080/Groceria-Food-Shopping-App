@@ -5,7 +5,7 @@ import 'package:swiggy/navigation_pages/dineoutpage.dart';
 import 'package:swiggy/navigation_pages/Food_Page/pizza_order_page.dart';
 import 'package:swiggy/navigation_pages/geniepage.dart';
 import 'package:swiggy/navigation_pages/homepage.dart';
-import 'package:swiggy/navigation_pages/instamartpage.dart';
+import 'package:swiggy/navigation_pages/Instamart/instamartpage.dart';
 
 import '../config/app_constant.dart';
 

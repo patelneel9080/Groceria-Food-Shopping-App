@@ -24,11 +24,15 @@ class AssetImg{
 }
 
 class Food{
-  static const hamburger = "https://i.pinimg.com/736x/c5/cc/20/c5cc2005ad651b73d324513750de085e.jpg"
-      "";
+  static const hamburger = "https://i.pinimg.com/736x/c5/cc/20/c5cc2005ad651b73d324513750de085e.jpg";
+  static const amulcoolmilk = "https://www.bigbasket.com/media/uploads/p/l/40005022_4-amul-kool-kesar.jpg";
+  static const icecreamcup = "https://5.imimg.com/data5/SELLER/Default/2022/8/WY/GS/AK/157798720/amul-cup-strawberry-jpg.jpg";
+  static const amulmilk = "https://www.racknsell.com/public/thumbs/products/40193/amul-gold-milk-pouch-v-500-ml_500_500.png";
   static const lambburger = "https://static.vecteezy.com/system/resources/previews/027/145/442/original/delicious-greek-lamb-burger-isolated-on-transparent-background-png.png";
   static const turkeyburger = "https://static.vecteezy.com/system/resources/previews/027/143/874/original/delicious-cranberry-turkey-burger-on-transparent-background-png.png";
   static const oven = "https://m.media-amazon.com/images/I/71EYqYZvzzL.jpg";
+  static const discount = "https://cdn.shopify.com/s/files/1/0430/8700/3813/files/Banner2_1200x.jpg?v=1614759347";
+  static const discountgrocery = "https://cdn.create.vista.com/downloads/5dae5059-70ee-4d77-b962-249462601791_1024.jpeg";
   static const freedeliveryimage = "https://lowincomerelief.com/wp-content/uploads/2023/01/Low-Income-Relief-Site-Images-53-728x410.png.webp";
   static const pizza = "https://freepngimg.com/thumb/pizza/2-pizza-png-image.png";
   static const onionpizza = "https://static.vecteezy.com/system/resources/previews/021/351/148/original/pizza-with-sausage-onion-and-pickles-isolated-on-a-transparent-background-png.png";

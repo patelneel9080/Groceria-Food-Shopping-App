@@ -3,11 +3,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 import 'package:swiggy/config/app_constant.dart';
 import 'package:swiggy/navigation_pages/Food_Page/pizza_order_page.dart';
+import 'package:swiggy/navigation_pages/homepage.dart';
 import 'package:swiggy/pages/name_email_login.dart';
 import 'package:swiggy/pages/getstarted.dart';
 import 'package:swiggy/pages/location_access.dart';
 import 'package:swiggy/screen/homescreen.dart';
 import 'package:swiggy/screen/splashscreen.dart';
+import 'package:swiggy/testfile.dart';
 
 
 import 'navigation_pages/Food_Page/burger_order_page.dart';
@@ -41,7 +43,7 @@ class MyApp extends StatelessWidget {
           ),
 
           debugShowCheckedModeBanner: false,
-          home: const HomeScreen(),
+          home: const SplashScreen(),
         );
       },
     );
