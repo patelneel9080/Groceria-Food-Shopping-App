@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -46,10 +47,13 @@ class CartPage extends StatelessWidget {
                         padding: const EdgeInsets.all(12.0),
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius: BorderRadius.circular(8)),
+                              borderRadius: BorderRadius.circular(18),
+                              color: CupertinoColors.white,
+                              boxShadow: const [
+                                BoxShadow(color: Colors.black, blurRadius: 1.4)
+                              ]),
                           child: ListTile(
-                            leading: Image.network(
+                            leading: Image.asset(
                               value.cartItems[index][2],
                               height: 36,
                             ),

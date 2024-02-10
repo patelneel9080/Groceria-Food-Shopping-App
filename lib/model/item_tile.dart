@@ -24,9 +24,11 @@ class GroceryItemTile extends StatelessWidget {
       padding: const EdgeInsets.all(12),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          color: color[100],
-        ),
+            borderRadius: BorderRadius.circular(18),
+            color: CupertinoColors.white,
+            boxShadow: const [
+              BoxShadow(color: Colors.black, blurRadius: 1.4)
+            ]),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -34,7 +36,7 @@ class GroceryItemTile extends StatelessWidget {
             // item image
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40.0),
-              child: Image.network(
+              child: Image.asset(
                 imagePath,
                 height: 64,
               ),

@@ -121,8 +121,6 @@ class _InstamartPageState extends State<InstamartPage> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 48),
-            // good morning bro
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 24.0),
               child: Text('Good morning,'),
@@ -130,7 +128,6 @@ class _InstamartPageState extends State<InstamartPage> {
 
             const SizedBox(height: 4),
 
-            // Let's order fresh items for you
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: Text(
@@ -167,6 +164,7 @@ class _InstamartPageState extends State<InstamartPage> {
               child: Consumer<CartModel>(
                 builder: (context, value, child) {
                   return GridView.builder(
+                    shrinkWrap: true,
                     padding: const EdgeInsets.all(12),
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: value.shopItems.length,
