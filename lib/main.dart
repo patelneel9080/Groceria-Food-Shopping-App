@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                 appBarTheme: const AppBarTheme(color: Colors.deepPurple)
             ),
             debugShowCheckedModeBanner: false,
-            home: HomeScreen(),
+            home: SplashScreen(),
           ),
         );
       },

@@ -189,18 +189,7 @@ class _InstamartPageState extends State<InstamartPage> {
             ),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black,
-          onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return CartPage();
-              },
-            ),
-          ),
-          child: const Icon(Icons.shopping_bag),
-        ),
+
       ),
     );
   }
