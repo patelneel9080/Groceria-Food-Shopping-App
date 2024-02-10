@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 import 'package:swiggy/config/app_constant.dart';
+import 'package:swiggy/pages/location_access.dart';
 import 'package:swiggy/pages/welcome_splashscreen.dart';
 import 'package:swiggy/pages/otp_login.dart';
 
@@ -126,7 +127,7 @@ class _PageFourState extends State<PageFour> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const PageFive(),
+                          builder: (context) => const PageSix(),
                         ));
                   });
                   SharedPreferences pref =

@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "name": "Restaurant A",
+    "address": "123 ABC Road, Surat",
+    "phoneNumber": "1234567890",
+    "menu": [
+      {
+        "rating": 4.5,
+        "name": "Paneer Tikka",
+        "price": 150,
+        "image": "https://www.cookwithkushi.com/wp-content/uploads/2023/02/tandoori_paneer_tikka_restaurant_style.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Butter Chicken",
+        "price": 250,
+        "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/04/butter-chicken-recipe.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Veg Biryani",
+        "price": 180,
+        "image": "https://daruadda.com/wp-content/uploads/2023/01/Veg-Biryani.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Restaurant B",
+    "address": "456 XYZ Street, Surat",
+    "phoneNumber": "9876543210",
+    "menu": [
+      {
+        "rating": 4,
+        "name": "Masala Dosa",
+        "price": 100,
+        "image": "https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Idli Sambhar",
+        "price": 80,
+        "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/05/idli-sambar-1.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Medu Vada",
+        "price": 70,
+        "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/07/vada-recipe-1-500x500.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Restaurant C",
+    "address": "789 PQR Avenue, Surat",
+    "phoneNumber": "8765432109",
+    "menu": [
+      {
+        "rating": 3.7,
+        "name": "Samosa Chaat",
+        "price": 60,
+        "image": "https://www.cookwithmanali.com/wp-content/uploads/2019/09/Samosa-Chaat.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Pav Bhaji",
+        "price": 120,
+        "image": "https://www.cookwithmanali.com/wp-content/uploads/2018/05/Best-Pav-Bhaji-Recipe-500x500.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Chole Bhature",
+        "price": 150,
+        "image": "https://www.cookwithmanali.com/wp-content/uploads/2018/02/Bhature-Recipe.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Restaurant D",
+    "address": "321 MNO Lane, Surat",
+    "phoneNumber": "7654321098",
+    "menu": [
+      {
+        "rating": 4.5,
+        "name": "Pani Puri",
+        "price": 40,
+        "image": "https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2019/Hing_Pani_Puri_Video_Recipe_20.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Dahi Puri",
+        "price": 50,
+        "image": "https://ministryofcurry.com/wp-content/uploads/2022/07/Dahi-Puri_-3.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Sev Puri",
+        "price": 45,
+        "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/sev-puri-2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Restaurant E",
+    "address": "654 JKL Street, Surat",
+    "phoneNumber": "6543210987",
+    "menu": [
+      {
+        "rating": 4.9,
+        "name": "Gujarati Thali",
+        "price": 200,
+        "image": "https://thumbs.dreamstime.com/b/gujarati-thali-contains-different-kinds-dishes-which-served-meal-38492466.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Khandvi",
+        "price": 80,
+        "image": "https://www.sanjanafeasts.co.uk/wp-content/uploads/2020/04/IMG_0589.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Dhokla",
+        "price": 100,
+        "image": "https://shwetainthekitchen.com/wp-content/uploads/2023/04/instant-khaman-dhokla-recipe.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Restaurant F",
+    "address": "987 RST Road, Surat",
+    "phoneNumber": "5432109876",
+    "menu": [
+      {
+        "rating": 3.9,
+        "name": "Pulao",
+        "price": 150,
+        "image": "https://tiffinandteaofficial.com/wp-content/uploads/2020/12/281122_1.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Kadai Paneer",
+        "price": 180,
+        "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/kadai-paneer-recipe.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Aloo Paratha",
+        "price": 90,
+        "image": "https://media.chefdehome.com/740/0/0/aloo-paratha/aloo-paratha-butter-photgraphy.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Restaurant G",
+    "address": "123 LMN Avenue, Surat",
+    "phoneNumber": "4321098765",
+    "menu": [
+      {
+        "rating": 4.2,
+        "name": "Chicken Biryani",
+        "price": 220,
+        "image": "https://j6e2i8c9.rocketcdn.me/wp-content/uploads/2020/09/Chicken-Biryani-Recipe-01-1.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Mutton Curry",
+        "price": 280,
+        "image": "https://myfoodstory.com/wp-content/uploads/2016/12/Easy-Mutton-Curry-1.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Fish Fry",
+        "price": 200,
+        "image": "https://nishkitchen.com/wp-content/uploads/2015/04/Chettinad-fish-fry-1B.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Restaurant H",
+    "address": "456 UVW Street, Surat",
+    "phoneNumber": "3210987654",
+    "menu": [
+      {
+        "rating": 3,
+        "name": "Pav Bhaji",
+        "price": 120,
+        "image": "https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2017/07/Pav-Bhaji-H2.jpg?fit=600%2C900&ssl=1"
+      },
+      {
+        "rating": 4.5,
+        "name": "Misal Pav",
+        "price": 100,
+        "image": "https://smithakalluraya.com/wp-content/uploads/2014/05/misal-pav-recipe-1.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Vada Pav",
+        "price": 50,
+        "image": "https://thejamlab.co/wp-content/uploads/2023/08/IMG_9219-scaled.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Restaurant I",
+    "address": "789 EFG Road, Surat",
+    "phoneNumber": "2109876543",
+    "menu": [
+      {
+        "rating": 4.6,
+        "name": "Rajma Chawal",
+        "price": 140,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Rajma_Chawal_by_Rama_Bhave.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Chole Kulche",
+        "price": 110,
+        "image": "https://www.poptheblender.com/wp-content/uploads/2020/08/79E8A22C-C8ED-44C6-A5CB-908D18893717.jpeg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Pav Bhaji",
+        "price": 120,
+        "image": "https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Restaurant J",
+    "address": "321 OPQ Avenue, Surat",
+    "phoneNumber": "1098765432",
+    "menu": [
+      {
+        "rating": 4.5,
+        "name": "Sushi",
+        "price": 300,
+        "image": "https://www.cookwithmanali.com/wp-content/uploads/2021/04/Vegan-Sushi.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Teriyaki Chicken",
+        "price": 250,
+        "image": "https://therecipecritic.com/wp-content/uploads/2022/01/teriyakichicken.jpg"
+      },
+      {
+        "rating": 4.5,
+        "name": "Miso Soup",
+        "price": 80,
+        "image": "https://itsavegworldafterall.com/wp-content/uploads/2021/03/Bok-Choy-Miso-Soup-3.jpg"
+      }
+    ]
+  }
+]

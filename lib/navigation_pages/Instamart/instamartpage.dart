@@ -2,13 +2,19 @@ import 'package:animated_segmented_tab_control/animated_segmented_tab_control.da
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'package:swiggy/model/food_modelview.dart';
 import 'package:swiggy/navigation_pages/Food_Page/pizza_order_page.dart';
+import 'package:swiggy/navigation_pages/Instamart/icecreamview.dart';
 
 import '../../config/app_constant.dart';
+import '../../model/cart_model.dart';
+import '../../model/item_tile.dart';
+import '../../pages/cart_page.dart';
 import '../../utils/Appcolor/app_color.dart';
 import '../../utils/images/imagess.dart';
+import 'listviewscreen.dart';
 
 class InstamartPage extends StatefulWidget {
   const InstamartPage({super.key});
@@ -24,307 +30,178 @@ class _InstamartPageState extends State<InstamartPage> {
     return DefaultTabController(
       length: 4,
       child: Scaffold(
-        body: CustomScrollView(
-          slivers: [
-            SliverAppBar(
-              automaticallyImplyLeading: false,
-              leading: const Icon(
-                CupertinoIcons.location_fill,
-                color: Colors.white,
-              ),
-              pinned: false,
-              snap: true,
-              actions: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ClipOval(
-                    child: Container(
-                      height: size.height / 22,
-                      width: size.width / 10,
-                      color: Colors.white54,
-                      child: const Icon(
-                        Icons.person,
-                        color: Colors.black54,
-                      ),
-                    ),
+        appBar: PreferredSize(
+          preferredSize: Size(size.width, size.height/12),
+          child: AppBar(
+            automaticallyImplyLeading: false,
+            title: const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "L.P.Savani >",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                   ),
-                )
+                ),
+                Text(
+                  "TGB, Hariom Nagar Society, Adajan Gam,Atman Park,...",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                  ),
+                ),
               ],
-              title: const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "L.P.Savani >",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20),
-                  ),
-                  Text(
-                    "TGB, Hariom Nagar Society, Adajan Gam,Atman Park,...",
-                    style: TextStyle(color: Colors.white, fontSize: 14),
-                  ),
-                ],
-              ),
-              floating: true,
-              expandedHeight: size.height / 12,
             ),
-            SliverToBoxAdapter(
-                child: Container(
-                    height: size.height,
-                    width: size.width,
-                    margin: const EdgeInsets.only(left: 12, right: 12),
-                    child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          SizedBox(
-                            height: size.height / 54,
-                          ),
-                          TextField(
-                            maxLines: 1,
-                            decoration: InputDecoration(
-                              suffixIcon: const Icon(Icons.search),
-                              hintText: "Search your daily grocery food",
-                              enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(12),
-                                borderSide:
-                                    const BorderSide(color: Colors.black54),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(12),
-                                borderSide:
-                                    const BorderSide(color: Colors.black54),
-                              ),
-                              contentPadding: const EdgeInsets.symmetric(
-                                  vertical: 18.0, horizontal: 14.0),
-                            ),
-                          ),
-                          SizedBox(
-                            height: size.height / 54,
-                          ),
-                          Container(
-                            height: size.height / 6,
-                            width: size.width,
-                            decoration: BoxDecoration(
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.black54, spreadRadius: .32)
-                                ],
-                                borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
-                                    image: NetworkImage(Food.discountgrocery),
-                                    fit: BoxFit.cover)),
-                          ),
-                          SizedBox(
-                            height: size.height / 56,
-                          ),
-                          Container(
-                            height: size.height / 8,
-                            width: size.width,
-                            decoration: BoxDecoration(
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.black54, spreadRadius: .32)
-                                ],
-                                borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
-                                    image: NetworkImage(Food.discount),
-                                    fit: BoxFit.cover)),
-                          ),
-                          SizedBox(
-                            height: size.height / 56,
-                          ),
-                          Text(
-                            "---------------TRENDING ORDERS---------------",
-                            style:
-                                TextStyle(color: Colors.black54, fontSize: 18),
-                          ),
-                          SizedBox(
-                            height: size.height / 56,
-                          ),
-                          Container(
-                            height: size.height / 6.4,
-                            width: size.width / 1.1,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(18),
-                                color: CupertinoColors.white,
-                                boxShadow: const [
-                                  BoxShadow(
-                                      color: Colors.black, blurRadius: 1.4)
-                                ]),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: size.height / 6,
-                                  width: size.width / 4,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(12),
-                                      image: const DecorationImage(
-                                          image: NetworkImage(Food.amulmilk),
-                                          fit: BoxFit.cover)),
-                                ),
-                                SizedBox(
-                                  width: size.width / 8,
-                                ),
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "AMUL MILK",
-                                      style: GoogleFonts.playfairDisplay(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    Text("Prize : ₹33"),
-                                    SizedBox(
-                                      height: size.height / 86,
-                                    ),
-                                    Container(
-                                      height: size.height / 22,
-                                      width: size.width / 3,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12),
-                                          border: Border.all(
-                                              color: AppColor.textfieldcolor,
-                                              width: 1.5)),
-                                      child: TextButton(
-                                          onPressed: () {},
-                                          child: Text("SEE MORE>")),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            height: size.height / 56,
-                          ),
-                            Container(
-                            height: size.height / 6.4,
-                            width: size.width / 1.1,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(18),
-                                color: CupertinoColors.white,
-                                boxShadow: const [
-                                  BoxShadow(
-                                      color: Colors.black, blurRadius: 1.4)
-                                ]),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: size.height / 6,
-                                  width: size.width / 4,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(12),
-                                      image: const DecorationImage(
-                                          image: NetworkImage(Food.icecreamcup),
-                                          fit: BoxFit.cover)),
-                                ),
-                                SizedBox(
-                                  width: size.width / 8,
-                                ),
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "ICE CREAM",
-                                      style: GoogleFonts.playfairDisplay(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    Text("Prize : ₹20"),
-                                    SizedBox(
-                                      height: size.height / 86,
-                                    ),
-                                    Container(
-                                      height: size.height / 22,
-                                      width: size.width / 3,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12),
-                                          border: Border.all(
-                                              color: AppColor.textfieldcolor,
-                                              width: 1.5)),
-                                      child: TextButton(
-                                          onPressed: () {},
-                                          child: Text("SEE MORE>")),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            height: size.height / 56,
-                          ),
-                          Container(
-                            height: size.height / 6.4,
-                            width: size.width / 1.1,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(18),
-                                color: CupertinoColors.white,
-                                boxShadow: const [
-                                  BoxShadow(
-                                      color: Colors.black, blurRadius: 1.4)
-                                ]),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: size.height / 8,
-                                  width: size.width / 4,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(12),
-                                      image: const DecorationImage(
-                                          image: NetworkImage(Food.amulcoolmilk),
-                                          fit: BoxFit.cover)),
-                                ),
-                                SizedBox(
-                                  width: size.width / 8,
-                                ),
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "COOL MILK",
-                                      style: GoogleFonts.playfairDisplay(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    Text("Prize : ₹20"),
-                                    SizedBox(
-                                      height: size.height / 86,
-                                    ),
-                                    Container(
-                                      height: size.height / 22,
-                                      width: size.width / 3,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(12),
-                                          border: Border.all(
-                                              color: AppColor.textfieldcolor,
-                                              width: 1.5)),
-                                      child: TextButton(
-                                          onPressed: () {},
-                                          child: Text("SEE MORE>")),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ])))
+            leading: Icon(CupertinoIcons.location_fill,color: Colors.white,),
+            actions: [
+              IconButton(onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return CartPage();
+                    },
+                  ),
+                );
+              }, icon: Icon(CupertinoIcons.shopping_cart,color: Colors.white,))
+            ],
+          ),
+        ),
+        // body: CustomScrollView(
+        //   slivers: [
+        //     SliverAppBar(
+        //       automaticallyImplyLeading: false,
+        //       leading: const Icon(
+        //         CupertinoIcons.location_fill,
+        //         color: Colors.white,
+        //       ),
+        //       pinned: false,
+        //       snap: true,
+        //       actions: [
+        //         Padding(
+        //           padding: const EdgeInsets.all(8.0),
+        //           child: ClipOval(
+        //             child: Container(
+        //               height: size.height / 22,
+        //               width: size.width / 10,
+        //               color: Colors.white54,
+        //               child: const Icon(
+        //                 Icons.person,
+        //                 color: Colors.black54,
+        //               ),
+        //             ),
+        //           ),
+        //         )
+        //       ],
+        //       title: const Column(
+        //         crossAxisAlignment: CrossAxisAlignment.start,
+        //         mainAxisAlignment: MainAxisAlignment.center,
+        //         children: [
+        //           Text(
+        //             "L.P.Savani >",
+        //             style: TextStyle(
+        //                 color: Colors.white,
+        //                 fontWeight: FontWeight.bold,
+        //                 fontSize: 20),
+        //           ),
+        //           Text(
+        //             "TGB, Hariom Nagar Society, Adajan Gam,Atman Park,...",
+        //             style: TextStyle(color: Colors.white, fontSize: 14),
+        //           ),
+        //         ],
+        //       ),
+        //       floating: true,
+        //       expandedHeight: size.height / 12,
+        //     ),
+        //   ],
+        // ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 48),
+            // good morning bro
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.0),
+              child: Text('Good morning,'),
+            ),
+
+            const SizedBox(height: 4),
+
+            // Let's order fresh items for you
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: Text(
+                "Let's order fresh items for you",
+                style: GoogleFonts.notoSerif(
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 24),
+
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.0),
+              child: Divider(),
+            ),
+
+            const SizedBox(height: 24),
+
+            // categories -> horizontal listview
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: Text(
+                "Fresh Items",
+                style: GoogleFonts.notoSerif(
+                  //fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            // recent orders -> show last 3
+            Expanded(
+              child: Consumer<CartModel>(
+                builder: (context, value, child) {
+                  return GridView.builder(
+                    padding: const EdgeInsets.all(12),
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemCount: value.shopItems.length,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      childAspectRatio: 1 / 1.2,
+                    ),
+                    itemBuilder: (context, index) {
+                      return GroceryItemTile(
+                        itemName: value.shopItems[index][0],
+                        itemPrice: value.shopItems[index][1],
+                        imagePath: value.shopItems[index][2],
+                        color: value.shopItems[index][3],
+                        onPressed: () =>
+                            Provider.of<CartModel>(context, listen: false)
+                                .addItemToCart(index),
+                      );
+                    },
+                  );
+                },
+              ),
+            ),
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black,
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) {
+                return CartPage();
+              },
+            ),
+          ),
+          child: const Icon(Icons.shopping_bag),
         ),
       ),
     );

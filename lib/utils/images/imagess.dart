@@ -1,6 +1,6 @@
 class ScreenImages {
   static const splashscreen =
-      "https://scontent.famd1-3.fna.fbcdn.net/v/t39.30808-6/307959489_468400441974981_5451057710767896996_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=JeWjIPv6SV4AX-Uj1AJ&_nc_ht=scontent.famd1-3.fna&oh=00_AfCepwbgm5_66SJ8lF9wG68vJ7CDeQa5OrUy9TAtExERAw&oe=65894D85";
+      "https://i.pinimg.com/originals/66/22/ab/6622ab37c6db6ac166dfec760a2f2939.gif";
   static const getstartedpage =
       "https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food.jpg";
   static const welcomeimg =

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 import 'package:swiggy/pages/getstarted.dart';
@@ -27,11 +28,19 @@ class _SplashScreenState extends State<SplashScreen> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
         backgroundColor: Colors.white,
-        body: Container(
-            height: size.height,
-            width: size.width,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: NetworkImage(ScreenImages.splashscreen)))));
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+                height: size.height/4,
+                width: size.width,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(ScreenImages.splashscreen)))),
+            Text("GROCERIA",style: GoogleFonts.prociono(fontSize: 24,color: 
+                Color(0xffF9BA56),fontWeight: FontWeight.bold),),
+          ],
+        ));
   }
 }

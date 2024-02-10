@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 import 'package:swiggy/config/app_constant.dart';
+import 'package:swiggy/model/cart_model.dart';
 import 'package:swiggy/navigation_pages/Food_Page/pizza_order_page.dart';
+import 'package:swiggy/navigation_pages/Instamart/seemore_icecream.dart';
 import 'package:swiggy/navigation_pages/homepage.dart';
 import 'package:swiggy/pages/name_email_login.dart';
 import 'package:swiggy/pages/getstarted.dart';
@@ -37,13 +40,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Sizer(
       builder: (BuildContext context, Orientation orientation, DeviceType deviceType) {
-        return MaterialApp(
-          theme: ThemeData(
-              appBarTheme: const AppBarTheme(color: Colors.deepPurple)
+        return ChangeNotifierProvider(
+          create: (BuildContext context) => CartModel(),
+          child: MaterialApp(
+            theme: ThemeData(
+                appBarTheme: const AppBarTheme(color: Colors.deepPurple)
+            ),
+            debugShowCheckedModeBanner: false,
+            home: HomeScreen(),
           ),
-
-          debugShowCheckedModeBanner: false,
-          home: const SplashScreen(),
         );
       },
     );

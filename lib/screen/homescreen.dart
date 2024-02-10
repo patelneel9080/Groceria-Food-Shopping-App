@@ -39,29 +39,29 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: NavigationBar(
           destinations: const [
             NavigationDestination(
-              selectedIcon: Icon(Icons.home),
+              selectedIcon: Icon(Icons.home,color: Colors.deepPurpleAccent,),
               icon: Icon(Icons.home_outlined,color: Colors.grey,),
               label: 'Home',
             ),
             NavigationDestination(
-              selectedIcon: Icon(Icons.emoji_food_beverage),
+              selectedIcon: Icon(Icons.emoji_food_beverage,color: Colors.deepPurpleAccent,),
               icon: Icon(Icons.emoji_food_beverage_outlined,color: Colors.grey,),
               label: 'Food',
             ),
             NavigationDestination(
-              selectedIcon: Icon(Icons.shopping_bag),
+              selectedIcon: Icon(Icons.shopping_bag,color: Colors.deepPurpleAccent,),
               icon: Icon(Icons.shopping_bag_outlined,color: Colors.grey,),
               label: 'Instamart',
             ),
             NavigationDestination(
-              selectedIcon: Icon(Icons.cookie),
+              selectedIcon: Icon(Icons.cookie,color: Colors.deepPurpleAccent,),
               icon: Icon(Icons.cookie_outlined,color: Colors.grey,),
               label: 'Dineout',
             ),
             NavigationDestination(
-              selectedIcon: Icon(Icons.book),
-              icon: Icon(Icons.book_outlined,color: Colors.grey,),
-              label: 'Genie',
+              selectedIcon: Icon(Icons.person,color: Colors.deepPurpleAccent,),
+              icon: Icon(Icons.person,color: Colors.grey,),
+              label: 'Account',
             ),
           ],
           onDestinationSelected: (int index) {
@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
           labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
           elevation: 1,
           backgroundColor: Colors.white,
-          selectedIndex: activeindex),
+            selectedIndex: activeindex),
     );
   }
 }
